@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: dimgrey;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: black;
+            color: white;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            color: lightcyan;
+        }
+
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: lightgrey;
+            text-align: center;
+        }
+
+        .hero span {
+            color: cyan;
+        }
+
+        .hero .button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: cyan;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .hero .button:hover {
+            background: lightblue;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            text-align: center;
+            list-style-position: inside;
+        }
+
+        .projects .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid black;
+            padding: 1rem;
+            border-radius: 6px;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: black;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span>Sagnik Barik</span></h1>
+        <p>Frontend Developer</p>
+        <a href="#" class="button">View My Work</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am Sagnik Barik, a student of first year at SST.<br>
+            My interest lies in solving real-world problems and I am very keen in making connections with people.<br>
+            My hobbies inlude listening to music, playing games, reading books. etc.
+        </p>
+        <p>Some of my skills include:</p>
+        <ul>
+            <li>Frontend Developer</li>
+            <li>Designer</li>
+            <li>Porblem Solver</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card one">
+                <h3>Project One</h3>
+                <p>A working Ferris-wheel</p>
+                <a href="./ferriswheel.html">View Project</a>
+            </div>
+            <div class="project-card two">
+                <h3>Project Two</h3>
+                <p>The orbital of the moon</p>
+                <a href="./moonoorbital.html">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sagnik.25bcs10534@sst.scaler.com">sagnik.25bcs10534@sst.scaler.com</a></p>
+        <p>GitHub: <a href="https://github.com/SagnikBarik56">SagnikBarik56</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sagnik-barik-2413bb337/">sagnik-barik-2413bb337</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sagnik Barik. All rights reserved.</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </footer>
+</body>
+
+</html>

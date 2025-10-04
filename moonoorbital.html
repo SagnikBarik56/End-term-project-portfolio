@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Keyframes and Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+        }
+
+        .earth{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: 100px;
+        }
+
+        .moon{
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;  
+            animation: rotation 1s linear infinite;          
+            position: absolute;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg) translateX(175px);
+            }
+            100% {
+                transform: rotate(360deg) translateX(175px);
+            }                                    
+        }
+    </style>
+</head>
+
+<body>
+    <div class="earth"></div>
+    <div class="moon"></div>
+</body>
+
+</html>
